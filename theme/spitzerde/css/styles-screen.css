@@ -177,7 +177,7 @@ body.current .contentHeaderWrap .carousel{background-image:none;background-color
 .navFooter li a:hover,.navFooter li a .act{color:#FFFFFF}
 .navSocial{padding-left:0;list-style:none !important;display:inline-block}
 .navSocial li{margin-left:8px;margin-right:8px;float:left}
-.navSocial li a{width:23px;height:23px;background:url('../../typo3conf/ext/salt_kkt/Resources/Public/vendor/saltation/gfx/ico_social_022.png') no-repeat left top;display:block;text-indent:-256px;overflow:hidden}
+.navSocial li a{width:23px;height:23px;background:url('/theme/spitzerde/img/ico_social_022.png') no-repeat left top;display:block;text-indent:-256px;overflow:hidden}
 .navSocial li a.ico_fb{background-position:0px top}
 .navSocial li a.ico_fb:hover{background-position:0px -28px}
 .navSocial li a.ico_tw{background-position:-28px top}
@@ -315,7 +315,7 @@ footer .footerContentSub{padding-top:23px;padding-bottom:23px;background-color:#
 .teaserBlock.teaserBlock2 p,.teaserBlock.teaserBlock2 .wilmaDate,.teaserBlock.teaserBlock2 .btn{display:none}
 .newsletterSubscribe{margin-top:23px;margin-bottom:15px !important}
 .newsletterSubscribe .newsletterSubscribeWrap{display:inline-block}
-.newsletterSubscribe .newsletterSubscribeWrap .ico_newsletter{margin-right:8px;padding:0.125em 4px 0.125em 30px;border:1px solid transparent;background:transparent url('../../typo3conf/ext/salt_kkt/Resources/Public/vendor/saltation/gfx/ico_newsletter.png') no-repeat left 2px;font-size:18px;text-transform:uppercase}
+.newsletterSubscribe .newsletterSubscribeWrap .ico_newsletter{margin-right:8px;padding:0.125em 4px 0.125em 30px;border:1px solid transparent;background:transparent url('/theme/spitzerde/img/ico_newsletter.png') no-repeat left 2px;font-size:18px;text-transform:uppercase}
 .newsletterSubscribe .newsletterSubscribeWrap .btn{margin-bottom:0}
 .accordionHeadline{position:relative;cursor:pointer}
 .accordionHeadline .csc-header{padding-bottom:8px}
