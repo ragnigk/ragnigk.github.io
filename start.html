@@ -26,7 +26,7 @@
 
 
 <ul  class="navMeta">
-                    <li><a href="/" title='Pastor Spitzer' class=''>Home</a></li>
+                    <li><a href="/start.html" title='Pastor Spitzer' class=''>Home</a></li>
                         <li><a href="/gottesdienst.html" title='Gottesdienste Kindergottesdienste' class=''>Gottesdienst</a></li>
                         <li><a href="/downloads" title='Downloads' class=''>Downloads</a></li>
                         <li><a href="http://www.citykircheberlin.de/" title='City Kirche Berlin' class=''>Gemeindeleben</a></li>
@@ -341,9 +341,9 @@ h1.new-single-title {
         <!--TYPO3SEARCH_end-->
         
       </div>
-                      
+              
         <aside style="min-height: 1345px;" class="col-md-4 contentAside equalize">
-                               <div id="c12024" class="csc-default">
+                                         <div id="c12024" class="csc-default">
             <h3>TV-Predigten</h3>
             <h4>Hier finden Sie, wo und wann Pastor Spitzer's Predigten im Fernsehen ausgestrahlt werden.</h4>
 
@@ -472,7 +472,14 @@ h1.new-single-title {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+<script>
+$(document).ready(function(){
+    $('#expand').css('cursor','pointer');
+    $("#expand").click(function(){
+        $("#more").toggle(1000);
+    });
+});
+</script>
 
 </body>
 </html>

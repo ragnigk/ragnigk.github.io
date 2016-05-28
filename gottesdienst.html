@@ -26,8 +26,8 @@
 
 
 <ul  class="navMeta">
-                    <li><a href="/" title='Pastor Spitzer' class=''>Home</a></li>
-                        <li><a href="/gottesdienst" title='Gottesdienste Kindergottesdienste' class=''>Gottesdienst</a></li>
+                    <li><a href="/start.html" title='Pastor Spitzer' class=''>Home</a></li>
+                        <li><a href="/gottesdienst.html" title='Gottesdienste Kindergottesdienste' class=''>Gottesdienst</a></li>
                         <li><a href="/downloads" title='Downloads' class=''>Downloads</a></li>
                         <li><a href="http://www.citykircheberlin.de/" title='City Kirche Berlin' class=''>Gemeindeleben</a></li>
                         <li><a href="/kontakt" title='Kontakt' class=''>Kontakt</a></li>
@@ -232,6 +232,26 @@ h1.new-single-title {
     font-size: 1.1em;
     margin-top: 0.5em;
 }
+/**
+ * Styles for 'responsive video embeds'
+ */
+.responsive-video {
+  height: 0; padding-top: 25px; padding-bottom: 67.5%; margin-bottom: 10px; position: relative; overflow: hidden;
+}
+.responsive-video.vimeo {
+  padding-top: 0;
+}
+.responsive-video.widescreen {
+  padding-bottom: 57.25%;
+}
+.responsive-video embed, .responsive-video iframe, .responsive-video object, .responsive-video video {
+  top: 0; left: 0; width: 100%; height: 100%; position: absolute;
+}
+@media (max-width: 767px) {
+  .responsive-video {
+    padding-top: 0;
+  }
+}
 </style>
     <div class="container-fluid navPathWrap">
       <div class="container">
@@ -266,14 +286,25 @@ h1.new-single-title {
                 </div>
                 
               <div id="c11202" class="csc-default" style="margin-top: 30px;"><div class="csc-header csc-header-n2"><h1>Gottesdienste</h1></div>
-              <p>Wir freuen uns nicht nur sehr über Neubesucher und Gäste, die uns bereits durch unsere langjährige Fernseharbeit kennen, sondern auch über Menschen anderer Glaubensrichtungen! Sie sind herzlich eingeladen, uns vor Ort persönlich kennenzulernen.<br />
-<strong>Gottesdienste</strong> finden zu einer "berlinerisch" menschenfreundlichen Zeit - <em>seit Juni 2012 in der <strong>St. George´s Church</strong>, einer traditionsreichen Kirche im wunderschönen grünen Neu-Westend (Charlottenburg)</em> - am <strong>Sonntag um 13:00 Uhr</strong> statt.</p>
+              <p>Wir freuen uns nicht nur sehr über Neubesucher und Gäste, die uns bereits durch unsere langjährige Fernseharbeit kennen, sondern auch über Menschen anderer Glaubensrichtungen! Sie sind herzlich eingeladen, uns vor Ort persönlich kennenzulernen.</p>
 
 <p>Wir bieten in vielen Gottesdiensten anspruchsvolle Musik, zum Teil von berühmten Solisten und Ensembles, aber auch jeden Sonntag moderne Kirchenlieder. Bei uns werden Sie lebendige Predigten und traditionelle Dienste wie Abendmahl, Gebet und Segnungen erleben.</p>
 
 <p>Für Familien gibt es parallel Kindergottesdienste mit Friederike Neugebauer. Nach dem Gottesdienst lädt unsere Caféteria zum Entspannen und Kennenlernen ein.</p>
 
-<p><strong>Trefflicher, wie dieses Feedback, lässt sich ein Gottesdienst in der CityKirche nicht beschreiben:</strong></p>
+<div class="csc-header csc-header-n2">
+<h1>Nächster Gottesdienst</h1>
+</div>
+
+<p>Unser nächster Gottesdienst findet am Sonntag, den 29.05.2016 in der <strong>St. George´s Kirche, Preußenallee 17-19, 14052 Berlin - Westend (Bezirk Charlottenburg)</strong> statt.</p>
+
+<p>Sie erreichen uns mit folgenden öffentlichen Verkehrsmitteln:</p>
+
+<p>U2 U-Bahnhof Neu-Westend, S5 S-Bahnhof Heerstr., BUS 104 U-Bahnhof Neu-Westend, BUS X34, X49, 218, M49 S-Bahnhof Heerstr.</p>
+
+<div class="csc-header csc-header-n2">
+<h1>Feedback</h1>
+</div>
 
 <p><strong>„ ...und Gott ist nur ein Gebet weit entfernt... “</strong></p>
 
@@ -281,10 +312,11 @@ h1.new-single-title {
 
 <p>Verletzt saß ich da, verwundet nach einer Erfahrung der tiefsten Enttäuschung meines Lebens. Zum ersten Mal in einer freien evangelischen Gemeinde. An die Hand genommen von einem stark im Glauben stehenden Christen. Ich war neugierig, meine Seele dürstete nach Nahrung. Und ich sollte IHN - den heiligen Geist - zu spüren bekommen.</p>
 
+<p class="bodytext" id="expand"><strong>Kompletten Feedback lesen</strong></p>
+
+<div id="more" style="display: none">
 <p>Federnden Schrittes betritt der Pastor den Platz vor dem Altar nach einer ersten Orgelimprovisation. Und begrüßt seine Schäfchen lautstark mit einem „Guten Morgen!“, worauf die Gemeinde im selben Wortlaut antwortet. Doch es reicht ihm nicht an Kraft, und somit fordert er die Anwesenden noch einmal auf und ein schallendes „Guten Morgen“ erfüllt nun die gut besuchte Kirche und zaubert so manch ein Lächeln in die Gesichter ...</p>
-<p></p>
-<div class="responsive-video widescreen"><iframe class='embedly-embed' src='//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy-op7KI6444%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy-op7KI6444&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy-op7KI6444%2Fhqdefault.jpg&key=3fedecb044d94eccb9eef404bee82126&type=text%2Fhtml&schema=youtube' width='750' height='400' scrolling='no' frameborder='0' allowfullscreen></iframe></div>
-<p></p>
+
 <p>Und dann folgt ein Gebet ...<br />
 Eine Einladung an Gottvater, Sohn und Heiligen Geist, diesem Gottesdienst beizuwohnen. Inbrünstig gesprochen, herbeigesehnt, aus tiefstem Herzen erbeten. Eine gesungene Hymne festigt den feierlichen Charakter in diesem Gotteshaus.</p>
 
@@ -314,7 +346,8 @@ Nicht selten entspinnen sich die ersten Gespräche, der erste Austausch über di
 <p>Möge Gottes Segen diese lebendige Gemeinde weiterhin begleiten!</p>
 
 <p>Friederike via E-Mail</p>
-              
+</div>
+<div class="responsive-video widescreen"><iframe allowfullscreen="" class="embedly-embed" frameborder="0" height="400" scrolling="no" src="//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2Fy-op7KI6444%3Ffeature%3Doembed&amp;url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dy-op7KI6444&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fy-op7KI6444%2Fhqdefault.jpg&amp;key=3fedecb044d94eccb9eef404bee82126&amp;type=text%2Fhtml&amp;schema=youtube" width="750"></iframe></div>              
 
               <p style="margin-top: 40px;text-align: center;"><img src="/theme/spitzerde/img/teilen.png"></p>
 </div>
@@ -373,9 +406,15 @@ Nicht selten entspinnen sich die ersten Gespräche, der erste Austausch über di
         <!--TYPO3SEARCH_end-->
         
       </div>
-                      
+              
         <aside style="min-height: 1345px;" class="col-md-4 contentAside equalize">
-                               <div id="c12024" class="csc-default">
+                    <div id="c12024" class="csc-default">
+              <h3>Gottesdienst verpasst?</h3>
+              <h4><a href="/download" class="internal-link">Predigt zum Nachlesen</a></h4>
+              <h4><a href="/shop" class="internal-link">Gottesdienst zum Nachhören</a></h4>
+          </div>
+          <div class="csc-default"><div class="divider"><hr></div></div>
+                                         <div id="c12024" class="csc-default">
             <h3>TV-Predigten</h3>
             <h4>Hier finden Sie, wo und wann Pastor Spitzer's Predigten im Fernsehen ausgestrahlt werden.</h4>
 
@@ -504,7 +543,14 @@ Nicht selten entspinnen sich die ersten Gespräche, der erste Austausch über di
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-
+<script>
+$(document).ready(function(){
+    $('#expand').css('cursor','pointer');
+    $("#expand").click(function(){
+        $("#more").toggle(1000);
+    });
+});
+</script>
 
 </body>
 </html>
