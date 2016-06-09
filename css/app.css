@@ -1,0 +1,962 @@
+
+
+
+
+
+
+
+
+
+/****************************************************************
+                    COMMONS
+****************************************************************/
+
+body {
+    background: #9c0f16; /* url('../img/fond-site2.jpg') top left no-repeat; */
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    color: #bbb;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 4em;
+    color: #fff;
+    margin: 0 0 0.5em;
+    padding: 0;
+    line-height: 1.7ex;
+}
+h1 .h1soft{
+    font-weight:300;
+    padding-left: 80px;
+    line-height: 3ex;
+    font-size: 0.8em;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-top: 0;
+}
+
+h3 {
+    font-weight:300;
+    font-size: 1.2em;
+    line-height: 0.8em;
+    margin-top: 0;
+    color: #fff;
+}
+
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+    color: #fff;
+}
+
+h6 {
+    clear: both;
+    padding-top: 1em;
+    display: block;
+    font-size: 0.6em;
+    color: #666;
+    line-height: 1.5em;
+}
+
+h6 ul li{
+    list-style-type: none;
+    font-size: inherit;
+    font-size: 0.6em;
+}
+
+a, a h2, h2 a, a h3, h3 a{
+    color: #fff;
+    font-style:italic;
+}
+
+a .presse-info, a.recordtitle{
+    color: #9c0f16;
+    font-style:normal;
+}
+a:hover, a:focus, a:hover h2 {
+    text-decoration: none;
+    color: #fff;
+}
+
+h2 a{
+    font-style: inherit;
+}
+
+
+p {
+    margin: 3px 0;
+}
+
+ul {
+    margin-left: 17px;
+}
+
+ol {
+    margin-left: 20px;
+}
+
+nav.ariane{
+    margin: 1em 0;
+}
+
+.panel{
+    background: none;
+    border: 1px solid #fff;
+}
+
+/****************************************************************
+                    MENU TOP BAR
+****************************************************************/
+
+.top-bar {
+    margin: 0;
+    height: 1em;
+    min-height: 4em;
+    line-height: 3em;
+    background: #9c0f16;
+}
+.top-bar ul {
+    height: auto;
+    line-height: 3em;
+}
+
+nav.top-bar section{
+    display: inline-block;
+}
+
+.top-bar li.name{
+    font-family: "Ventography";
+    font-size: 2em;
+    font-style: italic;
+    display: none;
+    color: inherit;
+}
+.top-bar ul > li a:not(.button) {
+    color: inherit;
+}
+nav.top-bar{
+    text-align:center;
+}
+.top-bar ul > li:hover:not(.name) a, .top-bar ul > li.active:not(.name) a, .top-bar ul > li:focus:not(.name) a {
+    color: #fff;
+}
+
+/* Override for top-bar menu background color in Foundation */
+nav.top-bar ul > li:hover:not(.name) a, nav.top-bar ul > li:focus:not(.name) a {
+    background-color: #9c0f16;
+}
+nav.top-bar ul > li a:not(.button) {
+    background-color: #9c0f16;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em;
+    height: 1em;
+    line-height: 1em;
+}
+nav.top-bar ul > li a:not(.first) {
+    border-left: #9c0f16; dotted 1px;
+}
+/* Override for top-bar menu dropdown background color in Foundation */
+nav.top-bar ul > li.active:not(.name) a{ 
+    font-weight: bold;
+    background-color: #9c0f16;
+}
+
+
+
+
+
+/****************************************************************
+                    FOUNDATION ROWS COLUMNS
+****************************************************************/
+
+
+.row {
+    width: 1000px;
+}
+
+.spacer{
+    height: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+/****************************************************************
+                    HEADER
+****************************************************************/
+
+.headerphoto {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 550px;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 2em 0 0 0;
+    padding: 0;
+}
+.headerphotoshort{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 200px;
+    top:2em;
+    overflow: hidden;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 510px;
+    position: relative;
+}
+
+header.headershort{
+    height: 200px;
+}
+
+header .headercontent{
+    float: right;
+    position: relative;
+    padding: 2em;
+    margin: 6em 0.8em;
+    background: rgba(156,15,22,0.9);
+    border: 1px solid #fff;
+    max-width: 54%;
+}
+header.headershort .headercontent{
+    margin: 2em 1em;
+    padding: 1em;
+}
+header.headershort h1{
+    font-size: 3em;
+}
+
+header .payoff{
+    font-size: 1em;
+    max-width: 60%;
+    font-weight:300;
+    line-height: 1.2em;
+    padding: 1em 5px 0 0;
+    color: #fff;
+}
+
+header .payoff small{
+    font-size: 0.8em;
+}
+
+
+
+/****************************************************************
+                    SIDE BAR
+****************************************************************/
+aside{
+    margin-bottom: 2em;
+}
+
+
+
+/****************************************************************
+                    ARTICLES
+****************************************************************/
+article p{
+    text-align: justify;
+}
+
+article nav{
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+.teaser{
+    font-style: italic;
+}
+.contentarea{
+    margin-bottom: 30px;
+}
+.entry-content{
+    position: relative;
+    display: block;
+    margin-bottom: 2em;
+}
+.entry-content h2{
+    font-size: 3em;
+}
+.entry-content .imageholder{
+    float: left;
+    max-width: 200px;
+    margin: 5px 1em 0.1em 0;
+}
+
+.videoslist ul li{
+    list-style-type: none;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+.videoslist ul li h3{
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    text-align: center;
+    min-height: 50px;
+    font-size: 1em;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.videoslist ul li:hover h3{
+    background-color: rgb(255,255,255);
+    color: #9c0f16;
+}
+
+/****************************************************************
+                    CATEGORIES WIDGETS
+****************************************************************/
+
+
+
+
+.category-ico{
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 7px 10px 0 0;
+}
+
+.category-widget{
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.category-link{
+    clear: both;
+    background: url('../img/barre-blanche.png') center center repeat-x;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+.category-link-label{
+    min-width: 260px;
+    width: 30%;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    border: 1px solid #fff;
+}
+.category-link-label-full{
+    width: 100%;
+}
+.category-link-label p{
+    vertical-align: middle;
+    font-size: 1.3em;
+    font-weight:300;
+    display: inline-block;
+    line-height: 1em;
+    margin: 0;
+    color: #fff;
+}
+.category-link-label p img{
+    vertical-align: middle;
+    margin: 0 20px 0 0;
+    padding: 0 0 5px;
+}
+.category-link-label p a{
+    color: inherit;
+    font-style: inherit;
+}
+.category-link-label p a:hover{
+    color: #666;
+}
+
+.article-info{
+    display: block;
+    position: relative;
+    min-height: 52px;
+    overflow: hidden;
+    background-color: #000;
+    border: 1px solid #fff;
+    padding: 5px;
+}
+.article-info p, a .article-info p {
+    color: #fff;
+}
+
+
+
+/****************************************************************
+                    ACTUS
+****************************************************************/
+.actu-img img{
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 333px;
+    border: 5px #FFF solid;
+}
+.article-info p{
+    font-style: italic;
+    font-weight:300;
+    font-size: 1.1em;
+    line-height: 1em;
+    padding: 5px 4px;
+}
+
+/* PAGE LISTE ACTUS */
+.article-teaser-titre{
+    font-size: 1.3em;
+    line-height: 32px;
+    vertical-align: middle;
+}
+.article-teaser .actu-img{
+    float: left;
+}
+.article-teaser .actu-img img{
+    max-width: 100px;
+    margin: 0 1em 1em 0;
+}
+.article-teaser .article-info{
+    height: auto;
+    margin-bottom: 1em;
+}
+.article-teaser h3{
+    margin-bottom: 0;
+}
+.article-teaser .article-excerpt p{
+    font-style: normal;
+    font-weight:300;
+    font-size: 1.1em;
+    line-height: 1em;
+    padding: 0 4px;
+}
+.article-teaser a:hover{
+    text-decoration: none;
+}
+
+/****************************************************************
+                    BIO
+****************************************************************/
+.bio-content p{
+    font-style: italic;
+    font-weight:300;
+    font-size: 1.7em;
+    line-height: 1.2em;
+    padding: 2px;
+    color: #fff;
+}
+#bio-container .imageholder img{
+    border: 5px #FFF solid;
+}
+
+
+
+/****************************************************************
+                    CONCERTS
+****************************************************************/
+#concerts{
+    height: 520px;
+}
+#concerts-container{
+    height: 450px;
+    overflow: hidden; 
+}
+.concert-separator{
+    width: 100%;
+    text-align: center;
+}
+
+.concert-separator img{
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+}
+.concert-item{
+    position: relative;
+}
+.concert-item .datejour{
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+}
+.concert-item .datejour p{
+    height: 32px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+    font-style: italic;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+.page-list-concerts .category-ico{
+    margin-top: 0;
+}
+.page-list-concerts .concert-date {
+    font-size: 1.3em;
+    line-height: 32px;
+    vertical-align: middle;
+}
+.page-list-concerts .concert-title {
+    line-height: 1.1em;
+    font-style: italic;
+}
+.page-list-concerts .concert-detail{
+    padding-left: 0;
+    padding-top: 3px;
+}
+.page-list-concerts a:hover{
+    text-decoration: none;
+}
+
+/****************************************************************
+                    VIDEOS
+****************************************************************/
+#videos{
+    display: block;
+    height: 520px;
+    overflow: hidden; 
+}
+#videos .responsive-video{
+    width: 100%;
+    height: 450px;
+}
+
+#videos-in-page{
+    display: block;
+}
+
+#videos-in-page .responsive-video{
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+}
+
+
+
+/****************************************************************
+                    PHOTOS
+****************************************************************/
+#photos{
+    height: 470px;
+}
+#photos-container{
+    height: 400px;
+    overflow: hidden; 
+    width: 100%;
+    display: inline-block;
+    padding: 5px 0 1em;
+}
+
+#photos-container img{
+    width: 49%;
+    height: auto;
+    margin: 0 0 1% 0;
+}
+
+#photos-container img.decal10{
+    margin-right: 1%;
+}
+.photo-listing img{
+    margin: 1em 0.6em 0em 0px;
+}
+
+
+/****************************************************************
+                    PRESSE
+****************************************************************/
+#presse{
+    height: 470px;
+}
+
+#presse-container{
+    height: 400px;
+    overflow: hidden; 
+    padding: 5px 0px 1em;
+}
+.presse-info{
+    height: 50px;
+}
+.presse-info p{
+    color: #fff;
+    font-style: normal;
+    line-height: 1.2em;
+    padding: 5px 4px 0px;
+}
+
+.presse-title{
+    font-weight: 400;
+    font-size: 1.6em;
+    font-style: normal;
+}
+.presse-date{
+    font-weight: 400;
+    font-size: 1em;
+    font-style: italic;
+}
+.presse-item h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+/****************************************************************
+                    FOOTER
+****************************************************************/
+footer{
+    background-color: #9c0f16;
+    color: #fff;
+    padding-top: 1em;
+    border-top: 1px solid #fff;
+}
+.footerhead{
+    margin-bottom: 2em;
+}
+.footerhead h3{
+    font-size: 2em;
+    font-style: normal;
+    font-weight:300;
+    color: #fff;
+    padding: 7px 0 0 57px;
+}
+
+footer p{
+    font-size: 0.9em;
+    padding: 0 0 0 60px;
+    font-weight:300;
+}
+.footerelement{
+    clear:both;
+    margin: 1em 2px 1em 60px;
+}
+p.footerelement{
+    margin-left: 0px;
+}
+.footerelement a{
+    color: inherit;
+    font-style: inherit;
+}
+.footerelement a:hover{
+    color: inherit;
+}
+.footerelement img{
+    float: left;
+}
+.footerelement p{
+    padding-left: 40px;
+}
+footer ul{
+    list-style-type: none;
+    line-height: 1.1em;
+}
+
+footer ul>li a{
+    color: #fff;
+    padding: 0 0 0 40px;
+    font-size: 0.9em;
+    font-style: italic;
+    font-weight:300;
+}
+
+footer ul>li a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+.credits{
+    border-top: #fff solid 1px;
+    background-color: #9c0f16;
+    color: #fff;
+    display: block;
+    position: relative;
+    margin-bottom: 1em;
+    padding: 0 0 0.5em;
+}
+.credits p{
+    font-size: 0.7em;
+    font-style: normal;
+    font-weight:300;
+    width: 100%;
+    text-align: center;
+}
+.credit-title{
+    width: 150px;
+    margin: 0 auto 0;
+    text-align: center;
+    background-color: #9c0f16;
+}
+.credits a:hover{
+    color: #fff;
+}
+
+.credit-title p{
+    padding: 0;
+    margin-top: -1em; 
+    color: #fff;
+    font-size: 2em;
+    font-weight:400;
+    text-align: center;
+}
+
+/****************************************************************
+                    BOLT EXEMPLE ITEMS
+****************************************************************/
+
+
+
+/* "bolt_widget" is the default container for widgets in Bolt. */
+.bolt_widget {
+    background: #f2f2f2;
+    border: solid 1px #e6e6e6;
+    margin-bottom: 8px;
+    padding: 6px;
+}
+
+
+
+
+
+
+/****************************************************************
+                    PAGINATION
+****************************************************************/
+.pagination-centered{
+    margin-top: 20px;
+}
+
+div.pagination ul {  display: inline-block; width: auto; height: 26px;  }
+div.pagination ul li { float: left; display: block; height: 26px; color: #999; font-size: 15px; }
+div.pagination ul li a { display: block; padding: 1px 8px 1px; color: #555; }
+div.pagination ul li:hover a, ul.pagination li a:focus { background: #6a6a6a; color: #fff; }
+div.pagination ul li.unavailable a { cursor: default; color: #999; }
+div.pagination ul li.unavailable:hover a, ul.pagination li.unavailable a:focus { background: transparent; }
+div.pagination ul li.active a { background: #9c0f16; color: white; font-weight: bold; cursor: default; }
+div.pagination ul li.active a:hover, ul.pagination li.current a:focus { background: #9c0f16; }
+
+
+
+
+
+
+
+
+/****************************************************************
+                    RESPONSIVE VIDEO
+****************************************************************/
+
+/* Styles for 'responsive video embeds' --------------------------------  */
+.responsive-video {
+    height: 0; position: relative; overflow: hidden;
+}
+.responsive-video.vimeo {
+    padding-top: 0;
+}
+.responsive-video.widescreen {
+    padding-bottom: 57.25%;
+}
+.responsive-video embed, .responsive-video iframe, .responsive-video object, .responsive-video video {
+    top: 0; left: 0; width: 100%; height: 100%; position: absolute;
+}
+@media (max-width: 767px) {
+    .responsive-video {
+        padding-top: 0;
+    }
+}
+/* End of Styles for 'responsive video embeds' -------------------------  */
+
+
+
+
+
+
+
+
+
+
+/****************************************************************
+                    RESPONSIVE ALTERNATE
+****************************************************************/
+
+/* Styles for 'max-width 940px' -----------------------------------------  */
+@media only screen and (max-width: 940px) {
+    .row{
+        padding: 0 1em;
+    }
+    header{
+        height: 360px;
+    }
+    header .headercontent {
+        margin: 3em 0.8em 2em;
+    }
+    .headerphoto {
+        height: 400px;
+    }
+    .top-bar li.name{
+        display: block;
+        color: #fff;
+    }
+    .top-bar {
+        background-color: #9c0f16;
+        color:#fff;
+    }
+    nav.top-bar ul > li.toggle-topbar:hover a, nav.top-bar ul > li.toggle-topbar:focus a {
+        color: #fff;
+        background-color: #9c0f16;
+    }
+    .top-bar section{
+        width: 100%;
+        background-color: #9c0f16;
+    }
+
+    nav.top-bar ul > li.toggle-topbar a {
+        color: #fff;
+        background-color: #9c0f16;
+        font-weight: normal;
+        text-transform: uppercase;
+        border: none;
+        width: 50px;
+        height: auto;
+        font-size: 1em;
+    }
+    .top-bar.expanded ul li.toggle-topbar a {
+        background: none;
+        border: none;
+        width: 50px;
+        height: auto;
+        font-size: 1em;
+    }
+    .top-bar-section ul {
+        background: #fff;
+    }
+    .top-bar-section ul li{
+        font-size: 1.5em;
+        height: 2.2em;
+    }
+    .top-bar-section ul > li:hover:not(.name), .top-bar-section ul > li.active:not(.name), .top-bar-section ul > li:focus:not(.name) {
+        color: #000;
+        background-color: #fff;
+    }
+    nav.top-bar .top-bar-section ul > li a{
+        line-height: 2.2em;
+        padding-top: 0.5em;
+    }
+    .article-info{
+        display: inline-block;
+        position: relative;
+        height: auto;
+        overflow: hidden;
+    }
+
+}
+
+/* Styles for 'max-width 767px' -----------------------------------------  */
+@media only screen and (max-width: 767px) {
+    #actus{
+        margin-top: 50px;
+    }
+    #actu-container article{
+        margin-top: 1em;
+    }
+    #actu-container .actu-img{
+        max-width: 30%;
+        float: left;
+    }
+    #actu-container .article-info{
+        width: 60%;
+        margin: 0 0 0 1em;
+    }
+}
+/* Styles for 'max-width 479px' -----------------------------------------  */
+@media only screen and (max-width: 479px) {
+    header .headercontent {
+        width: 100%;
+    }
+    .headerphoto {
+        margin-bottom: 0px;
+        height: 300px;
+    }
+
+    .headerphoto span {
+        display: none;
+    }
+    .headerphoto small {
+        display: block;
+        font-size: 22px;
+        color: #FFF;
+        line-height: 26px;
+    }
+
+    .column, .columns {
+        padding: 0 12px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+
+
+    h3 {
+        font-size: 24px;
+    }
+
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+
+    h6 {
+        font-size: 15px;
+    }
+
+    .imageholder {
+        float: none;
+    }
+
+}
